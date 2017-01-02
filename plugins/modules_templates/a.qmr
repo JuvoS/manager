@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>姓名</td>
+        <td>{name}</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>{Email}</td>
+    </tr>
+</table>
+</body>
+</html>

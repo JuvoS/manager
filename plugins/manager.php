@@ -19,6 +19,13 @@ defined('ROOT_PATH') or define('ROOT_PATH', str_replace('\\', '/', realpath(dirn
 
 /* 系统函数 */
 require(BASE_PATH . 'config/handle.php');
+/* 设备判断 */
+require(BASE_PATH . 'config/mobile_config.php');
+
+if (isMobile())
+    echo '手机登录m.jb51.com';
+else
+    echo '电脑登录www.jb51.com';
 /*加载文件*/
 //load_file(BASE_PATH . 'config/contant.php');
 //require("/config/contant.php");
@@ -33,6 +40,13 @@ try {
     }
     if($_GET["go"]==2){
         load_file(BASE_PATH . 'config/contant.php');
+    }
+    if($_GET["go"]==3){
+        load_file(BASE_PATH . 'config/mobile_config.php');
+    }
+    if($_GET["go"]==4){
+        echo BASE_PATH . 'modules_class/a.php';
+        load_file(BASE_PATH . 'modules_class/a.php');
     }
 } catch (Exception $e) {
     E('不存在', 404);
