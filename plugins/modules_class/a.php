@@ -7,7 +7,7 @@
  */
 
 //包含class.smarttemplate.php文件
-require("../s_config/class.smarttemplate.php");
+require("/plugins/s_config/class.smarttemplate.php");
 
 //实例化SmartTemplate的一个对象，并与a.html关联
 $page = new SmartTemplate("a.qmr");

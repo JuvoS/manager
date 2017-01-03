@@ -40,7 +40,7 @@
 		*
 		* @access public
 		*/
-		var $template_dir       =  '.././modules_templates/';
+		var $template_dir       =  './plugins/modules_templates/';
 
 		/**
 		* Where to store compiled templates
@@ -48,7 +48,7 @@
 		*
 		* @access public
 		*/
-		var $temp_dir       =  './compiled/';
+		var $temp_dir       =  './plugins/modules_class/compiled/';
 
 		/**
 		* Temporary folder for output cache storage
@@ -56,7 +56,7 @@
 		*
 		* @access public
 		*/
-		var $cache_dir      =  './modules_templates/';
+		var $cache_dir      =  './plugins/modules_templates/';
 
 		/**
 		* Default Output Cache Lifetime in Seconds

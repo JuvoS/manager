@@ -45,8 +45,8 @@ try {
         load_file(BASE_PATH . 'config/mobile_config.php');
     }
     if($_GET["go"]==4){
-        echo BASE_PATH . 'modules_class/a.php';
-        load_file(BASE_PATH . 'modules_class/a.php');
+//      echo BASE_PATH . 'modules_class/a.php';
+        require('modules_class/dex.php');
     }
 } catch (Exception $e) {
     E('不存在', 404);
